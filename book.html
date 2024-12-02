@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Seat - DineSpear</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">DineSpear</div>
+        <nav class="navigation">
+            <a href="#index.html">Home</a>
+            <a href="#about">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="#contact">Contact</a>
+            <a href="./view-cart.html">View Cart</a>
+            <a href="book.html">
+            <button class="btnbook">Book A Seat</button></a>
+        </nav>
+    </header>
+
+    <section class="booking-form">
+        <h1>Book a Seat</h1>
+        <p>Reserve your table today for an exquisite dining experience.</p>
+        <form action="submit_booking.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="requests" placeholder="Enter any special requests"></textarea>
+
+            <button type="submit" class="btn-submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DineSpear. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - DineSpear</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">DineSpear</div>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#about">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="#contact">Contact</a>
+            <a href="./view-cart.html">View Cart</a>
+            <a href="book.html">
+            <button class="btnbook">Book A Seat</button></a>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for dishes..." class="search-bar" />
+            <button type="button" class="search-btn">Search</button>
+          </div>
+        <h1>Our Menu</h1>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="./asset/Classic Margherita Pizza.jpg" alt="Classic Margherita Pizza">
+                <h3>Classic Margherita Pizza</h3>
+                <p>Rich sauce, fresh mozzarella, and basil.</p>
+                <span class="price"> ₹700</span>
+                <button class="btn-add" >Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./asset/Creamy Alfredo Pasta.jpg" alt="Creamy Alfredo Pasta">
+                <h3>Creamy Alfredo Pasta</h3>
+                <p>Fettuccine pasta with creamy Alfredo sauce.</p>
+                <span class="price"> ₹350</span>
+                <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./asset/chees burger.jpg" alt="Cheeseburger Deluxe">
+                <h3>Cheeseburger Deluxe</h3>
+                <p>Grilled beef patty with melted cheese and toppings.</p>
+                <span class="price"> ₹290</span>
+                <button class="btn-add" onclick=>Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./asset/Fresh Garden Salad.jpg" alt="Fresh Garden Salad">
+                <h3>Fresh Garden Salad</h3>
+                <p>Mixed greens, cherry tomatoes, and vinaigrette.</p>
+                <span class="price"> ₹200</span>
+                <button class="btn-add" >Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <a href="./asset/menu.card.webp" download="menucard" style="color: #f09319;">Explore Our Exquisite Menu!</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DineSpear. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
